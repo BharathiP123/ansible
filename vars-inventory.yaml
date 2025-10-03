@@ -1,0 +1,7 @@
+- name: variable defining at inventory level
+  hosts: local
+  connection: local
+  tasks:
+    - name: This is task related to vaiables
+      ansible.builtin.debug:
+        msg: " My name is : {{username}}"
