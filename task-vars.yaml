@@ -6,6 +6,6 @@
   tasks:
     - name: This is task related to vaiables
       vars:
-        username: "Bharathi"
+        username: "Bharathi Potla"
       ansible.builtin.debug:
         msg: " My name is : {{username}}"
