@@ -1,0 +1,9 @@
+- name: variable defining
+  hosts: local
+  connection: local
+  vars_file:
+    - vars-file.yaml
+  tasks:
+    - name: This is task related to vaiables
+      ansible.builtin.debug:
+        msg: " My name is : {{username}} lastname: {{LastName}}"
