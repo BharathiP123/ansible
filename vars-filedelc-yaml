@@ -5,4 +5,4 @@
   tasks:
     - name: This is task related to vaiables
       ansible.builtin.debug:
-        msg: " My name is : {{username}} lastname: {{LastName}}"
+        msg: " My name is : {{username}} lastname: {{Lastname}}"
