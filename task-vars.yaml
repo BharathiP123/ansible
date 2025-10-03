@@ -1,0 +1,11 @@
+- name: variable defining
+  hosts: local
+  connection: local
+  vars:
+    username: "Bharathi"
+  tasks:
+    - name: This is task related to vaiables
+      vars:
+        username: "Bharathi"
+      ansible.builtin.debug:
+        msg: " My name is : {{username}}"
