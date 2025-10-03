@@ -11,4 +11,4 @@
   tasks:
     - name: This is task related to vaiables prompt
       ansible.builtin.debug:
-        msg: " My name is : {{ username }} {{password}}"
+        msg: " My name is : {{ username }} "
