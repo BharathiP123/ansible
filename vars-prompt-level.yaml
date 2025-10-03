@@ -2,10 +2,13 @@
   hosts: local
   connection: local
   vars_prompt:
-    name: "username"
+  - name: "username"
     prompt: "Enter user name"
     private: no
+  - name: "password"
+    prompt: "Enter password"
+    private: yes
   tasks:
     - name: This is task related to vaiables prompt
       ansible.builtin.debug:
-        msg: " My name is : {{ username }}"
+        msg: " My name is : {{ username }} {{password}}"
