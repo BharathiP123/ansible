@@ -2,10 +2,10 @@
   hosts: local
   connection: local
   vars_prompt:
-    name: "user name"
+    Username: "username"
     prompt: "Enter user name"
     private: no
   tasks:
     - name: This is task related to vaiables prompt
       ansible.builtin.debug:
-        msg: " My name is : {{ name }}"
+        msg: " My name is : {{ username }}" 
