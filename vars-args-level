@@ -1,0 +1,7 @@
+- name: variable defining at args level
+  hosts: local
+  connection: local
+  tasks:
+    - name: This is task related to vaiables at args level
+      ansible.builtin.debug:
+        msg: " My name is : {{username}}"
