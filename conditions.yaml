@@ -6,5 +6,5 @@
   tasks:
     - name: condtions 
       ansible.builtin.debug:
-      msg: "given  number{{ num }} is less than 10"
+        msg: "given  number{{ num }} is less than 10"
       when: num < 10
