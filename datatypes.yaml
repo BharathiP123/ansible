@@ -3,7 +3,7 @@
   connection: local
   vars:
     username: "Bharathi" ##This is strun
-    numver: 120 ##Number
+    number: 120 ##Number
     is_live: true 
     tools: 
       - "linux"
