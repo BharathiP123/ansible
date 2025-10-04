@@ -5,7 +5,7 @@
     - name: loops 
       ansible.builtin.debug:
         msg: "loops: {{ item}}"
-      loops:
+      loop:
         - "linux"
         - "mysql"
         - python
