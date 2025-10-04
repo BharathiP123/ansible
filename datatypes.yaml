@@ -1,0 +1,20 @@
+- name: data types in ansible
+  hosts: local
+  connection: local
+  vars:
+    username: "Bharathi" ##This is strun
+    numver: 120 ##Number
+    is_live: true 
+    tools: 
+      - "linux"
+      -  "aws"
+      - "k8s"
+    concepts:
+      cloud: "aws"
+      cm: ansible
+      iac: terraform
+
+  tasks:
+    - name: This is task related to vaiables
+      ansible.builtin.debug:
+        msg: " My name is : {{username}} number is : {{number}} tools: {{tools} concepts: {{concepts}}"
