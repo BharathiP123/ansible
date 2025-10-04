@@ -17,4 +17,4 @@
   tasks:
     - name: This is task related to vaiables
       ansible.builtin.debug:
-        msg: " My name is : {{username}} ,number is : {{number}}, tools: {{tools}, concepts: {{concepts}}"
+        msg: " My name is : {{username}} ,number is : {{number}}, tools: {{tools}}, concepts: {{concepts}}"
