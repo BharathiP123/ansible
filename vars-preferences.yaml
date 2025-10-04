@@ -4,10 +4,10 @@
     UserName: "Bharathi at play level"
   vars_files:
   - vars-file.yaml
-  vars_prompt:
-    name: "UserName"
-    prompt: "enter the name at prompt level"
-    private: no
+  # vars_prompt:
+  #   name: "UserName"
+  #   prompt: "enter the name at prompt level"
+  #   private: no
   tasks: 
     - name: varaiable preferences
       #vars:
