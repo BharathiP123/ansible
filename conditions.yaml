@@ -1,0 +1,10 @@
+- name: conditions in vars-file.yaml
+  hosts: local
+  become: yes
+  vars: 
+    num: 5
+  tasks:
+    - name: condtions 
+      ansible.builtin.debug:
+      msg: "given  number{{ num }} is less than 10"
+      when: num < 10
