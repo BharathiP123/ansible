@@ -1,9 +1,9 @@
 - name: Variable preferences
   hosts: local
-  vars:
-    UserName: "Bharathi at play level"
-  vars_files:
-  - vars-file.yaml
+  # vars:
+  #   UserName: "Bharathi at play level"
+  # vars_files:
+  # - vars-file.yaml
   # vars_prompt:
   #   name: "UserName"
   #   prompt: "enter the name at prompt level"
