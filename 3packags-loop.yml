@@ -1,5 +1,6 @@
 - name: install 3 packages using loop
   hosts: local
+  become: yes
   connection: local
   tasks: 
     - name: install nginx ,mysql,zip
