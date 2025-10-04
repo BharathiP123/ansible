@@ -10,7 +10,7 @@
     private: no
   tasks: 
     - name: varaiable preferences
-      vars:
-        UserName: "Name at task level"
+      #vars:
+        #UserName: "Name at task level"
       ansible.builtin.debug:
         msg: "Name: {{UserName}}"
