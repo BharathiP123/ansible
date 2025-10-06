@@ -5,6 +5,9 @@
   vars: 
     name: "Bharathi"
     courses: aws,ansible,k8s,terraform
+    tags:
+      Application: payment
+      Environment: dev
   tasks:
     - name: undefined variables calling
       ansible.builtin.debug:
@@ -12,3 +15,6 @@
     - name: convert string to list
       ansible.builtin.debug:
         msg: "{{ courses | split(',') }}"
+    - name: convert string to list
+      ansible.builtin.debug:
+        msg: "{{ tags | dict2items }}"
