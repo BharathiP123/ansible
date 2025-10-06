@@ -4,7 +4,11 @@
   connection: local
   vars: 
     name: "Bharathi"
+    courses: aws,ansible,k8s,terraform
   tasks:
     - name: undefined variables calling
       ansible.builtin.debug:
         msg: "{{ name | default('Bharathi') }}"
+    - name: convert string to list
+      ansible.builtin.debug:
+        msg: "{{ courses | split (,) }}"
