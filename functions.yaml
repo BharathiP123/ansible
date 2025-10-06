@@ -33,3 +33,10 @@
   - name: convert list into map
     ansible.builtin.debug:
       msg: "tag map: {{ listTags | items2dict }}"
+
+  - name: read the file and store in a variable, create a varaiable
+    ansible.builtin.set_fact:
+      student_form: "{{ lookup('file', 'student.yaml') }}"
+  - name: print the student_form
+    ansible.builtin.debug:
+      ms: "student form file: {{ student_form }}"
