@@ -1,0 +1,8 @@
+--- 
+- name: functions or filters in vars-file.yaml
+  hosts: local
+  connection: local
+  tasks:
+    - name: undefined variables calling
+      ansible.builtin.debug:
+      msg: "My name is : {{ name}}"
