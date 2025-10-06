@@ -11,4 +11,4 @@
         msg: "{{ name | default('Bharathi') }}"
     - name: convert string to list
       ansible.builtin.debug:
-        msg: "{{ courses | split (,) }}"
+        msg: "{{ courses | split(',') }}"
