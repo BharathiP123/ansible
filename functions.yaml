@@ -5,4 +5,4 @@
   tasks:
     - name: undefined variables calling
       ansible.builtin.debug:
-      msg: "{{ name | default('Bharathi') }}"
+        msg: "{{ name | default('Bharathi') }}"
