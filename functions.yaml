@@ -39,9 +39,9 @@
       student_form: "{{ lookup('file', 'student.yaml') }}"
   - name: print the student_form
     ansible.builtin.debug:
-      msg: "student form file: {{ student_form  | to_json }}"
+      msg: "student form file: {{ student_form }}"
   - name: Copy a file to the remote server
     ansible.builtin.copy:
       src: {{ student_form | to_nice_json }}
       dest: ./student_data
-      
+
