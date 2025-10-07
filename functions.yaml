@@ -44,7 +44,9 @@
     ansible.builtin.copy:
       content: "{{ student_form | to_nice_json }}"
       dest: ./student_data
-   - name: convert uppercase
-      ansible.builtin.debug:
-        msg: "{{ name | upper }}"
+   
+  - name: convert uppercase
+    ansible.builtin.debug:
+      msg: " {{ name | upper }}"
+            
 
