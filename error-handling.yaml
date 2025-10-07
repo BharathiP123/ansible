@@ -6,4 +6,4 @@
   tasks: 
   - name: error handling
     ansible.builtin.command: id roboshop
-    
+    ignore_erros: true
