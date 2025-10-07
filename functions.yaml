@@ -42,6 +42,6 @@
       msg: "student form file: {{ student_form }}"
   - name: Copy a file to the remote server
     ansible.builtin.copy:
-      content: {{ student_form | to_nice_json }}
+      content: "{{ student_form | to_nice_json }}"
       dest: ./student_data
 
