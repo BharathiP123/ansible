@@ -4,6 +4,6 @@
   connection: local
   become: yes
   tasks: 
-    - name: error handling
+    - name: error handling in task level
       ansible.builtin.command: id roboshop
       ignore_erros: true
