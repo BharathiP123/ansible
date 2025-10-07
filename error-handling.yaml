@@ -1,0 +1,9 @@
+---
+- name: error handling
+  hosts: local
+  connection: local
+  become: yes
+  tasks: 
+  - name: error handling
+    ansible.builtin.command: id roboshop
+    
