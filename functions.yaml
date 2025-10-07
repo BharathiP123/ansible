@@ -48,5 +48,14 @@
   - name: convert uppercase
     ansible.builtin.debug:
       msg: " {{ name | upper }}"
+
+ - name: convert lowercase
+    ansible.builtin.debug:
+      msg: "{{ gmail | lower }}"
+
+  - name: check IP is valid or not
+    ansible.builtin.debug: 
+      msg: "{{ ipaddress | ansible.utils.ipv4 }}"
+
             
 
