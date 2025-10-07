@@ -1,10 +1,10 @@
 ---
-- name: error handling
+- name: user creation
   hosts: local
   connection: local
   become: yes
-  tasks: 
-  - name: task level
-    ansible.builtin.command: id roboshop
-    register: user_output
-    ignore_erros: true
+  tasks:
+    - name: check the user exist or nt
+      ansible.builtin.command: id roboshop
+      register: user_output
+      ignore_erros: true
