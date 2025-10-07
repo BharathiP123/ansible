@@ -61,5 +61,9 @@
     ansible.builtin.shell: ls -ltr > ./text
     register: command_out
 
+  - name: command_out print command_out
+    ansible.builtin.debug:
+      msg: "{{ command_out }}"
+
             
 
