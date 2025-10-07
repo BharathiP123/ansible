@@ -78,6 +78,18 @@
     register: register_output
     ignore_errors: true
 
+  - name: redirect register_output
+    ansible.builtin.debug:
+      msg: "{{ register_output }}"
+
+  - name: list he files and store in temp file
+    ansible.builtin.shell: ls -lt > /tmp/test
+    register: register_test
+
+  - name: print the register_output
+    ansible.builtin.debug:
+     msg: "{{ register_test }}"
+
 
 
             
