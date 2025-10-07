@@ -65,5 +65,11 @@
     ansible.builtin.debug:
       msg: "{{ command_out }}"
 
+  - name: command ansible
+    ansible.builtin.command: cat new
+    register: command_out1
+    
+
+
             
 
