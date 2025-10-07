@@ -73,6 +73,11 @@
     ansible.builtin.debug:
      msg: "{{ command_out1 }}"
 
+  - name: redirect the errors
+    ansible.builtin.command: cat /etc/passwd | grep root
+    register: register_output
+    ignore_errors: true
+
 
 
             
