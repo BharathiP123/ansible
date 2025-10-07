@@ -49,7 +49,7 @@
     ansible.builtin.debug:
       msg: " {{ name | upper }}"
 
- - name: convert lowercase
+  - name: convert lowercase
     ansible.builtin.debug:
       msg: "{{ gmail | lower }}"
 
