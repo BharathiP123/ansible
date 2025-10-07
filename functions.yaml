@@ -57,5 +57,9 @@
     ansible.builtin.debug: 
       msg: "{{ ipaddress | ansible.utils.ipv4 }}"
 
+  - name: ansible command or Shell
+    ansible.builtin.command: ls -ltr > new
+    register: ls-out
+
             
 
